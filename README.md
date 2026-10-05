@@ -1,5 +1,7 @@
 # transient-heatflow-moving-grid
-Fortran code for transient heat-flow modelling with advective remapping, associated with Anees et al (2026), Solid Earth.
+Fortran code for the 1-D transient thermal modelling used in:
+
+Anees, M., Hindle, D., Meneses Rioseco, E., Kley, J., Leiss, B., Shah, M. M., and Qureshi, J. A. (2025), Geothermal implications of the lithosphere’s thermal structure in northern Pakistan, EGUsphere, https://doi.org/10.5194/egusphere-2025-5252.
 # Transient 1-D Lithospheric Heat-Flow Model
 
 Fortran code for modelling transient one-dimensional conductive heat transport through a layered lithosphere.
@@ -312,4 +314,4 @@ See `LICENSE`.
 
 If you use this software, please cite the associated publication and the archived Zenodo release of this repository.
 
-The permanent Zenodo DOI will be added here when the first repository release is archived.
+The archived version of this code is available from Zenodo: https://doi.org/10.5281/zenodo.23160464.
