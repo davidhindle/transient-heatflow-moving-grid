@@ -1,0 +1,29 @@
+true                # radiative
+false               # bckind (false = dirichlet at base)
+1000.0d0            # kr - temperature cutoff °K for radiative component of thermal conducitivtiy, should probably = 10000.d0 °K 
+100                 # dx = grid spacing in metres
+100                 # dt = time step in years
+1.5d7               # maxt = end time of run in years
+10		    # outno = no of times to save output
+10		    # bc1 - surface temperature bc °C
+1400                # bc2 - base of lithosphere bc (depends on neumann true (hf) or false (fixed temp °C))
+0.d0             # vertical velocity m/yr - instant erosion at surface, replacement at base
+4                   # ko(n) - number of layers (integer) (ko(n))
+2.3  2.d-6  1500  2500  10000 # layer thermal cond, ko; radiogenic heat, ao; depth to base of layer (metres)
+2.5  2.d-6  2700  2000  25000 # must be as many layers (line by line) as given for ko(n) above)
+2.6  0.2d-6  2900  2000  50000 
+3.4  0.2d-6  3300  2000  150000
+3.4  2.d-7  3300  2000        # properties of layer moving into model
+# as of here, program will not read further so all lines here and below are ignored
+# spare values follow
+2.3  4.01d-6  1500  2500  10000 # layer thermal cond, ko; radiogenic heat, ao; depth to base of layer (metres)
+2.5  2.d-6    2700  2000  25000 # must be as many layers (line by line) as given for ko(n) above)
+2.6  0.4d-6   2700  2000  50000 
+3.4  0.02d-6  2700  2000  150000
+
+2.3  1.d-6  2700  1000  15000 # layer thermal cond, ko; radiogenic heat, ao; depth to base of layer (metres)
+3.0  0.08d-6 3000  1000  20000 # must be as many layers (line by line) as given for ko(n) above)
+2.3  2.d-6  2700  1000  30000
+2.5  1.d-6  2800  1000  40000
+2.6  0.4d-6  3000  1000  70000 
+3.4  0.02d-6  3300  2000  180000 
